@@ -21,6 +21,7 @@ logging.basicConfig(
     encoding='utf-8'    
 )
 
+
 # ------------------ Функции ------------------
 # Простое XOR-шифрование
 def xor_data(data: bytes, key: int) -> bytes:
