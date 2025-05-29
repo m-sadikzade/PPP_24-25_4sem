@@ -3,7 +3,7 @@ from fastapi import HTTPException, Request, status, Security
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from jose import jwt, JWTError
 
-SECRET_KEY = "secret-key"          # в бою храните в .env
+SECRET_KEY = "secret-key"    
 ALGO       = "HS256"
 
 # Схема безопасности для Swagger-UI

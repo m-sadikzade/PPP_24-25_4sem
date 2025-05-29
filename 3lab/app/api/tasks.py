@@ -8,7 +8,7 @@ router = APIRouter(tags=["image"])
 @router.post("/binarize/", summary="Upload image and start binarization")
 async def upload_image(
     file: UploadFile = File(..., description="Изображение"),
-    algorithm: str = Form(..., description="Алгоритм (otsu, adaptive …)"),
+    algorithm: str = Form(..., description="Алгоритм (otsu, adaptive или custom)"),
     user: dict = Depends(get_current_user), 
 ):
     img_bytes = await file.read()

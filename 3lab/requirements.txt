@@ -11,4 +11,3 @@ requests
 python-dotenv
 opencv-python
 numpy
-# pillow>=9.0.0 # Если планируется использовать Pillow для других операций

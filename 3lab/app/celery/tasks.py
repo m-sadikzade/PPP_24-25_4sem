@@ -1,11 +1,8 @@
 # app/celery/tasks.py
-
 import base64
 import time
 import numpy as np
 import cv2
-from io import BytesIO
-from PIL import Image
 import os
 
 from .config import celery_app
@@ -54,7 +51,7 @@ def binarize_image_task(self, img_bytes: bytes, algorithm: str, user_id: int):
         # Сохранение результата в байты
         _, encoded_img = cv2.imencode(".png", bin_img)
 
-        # ✅ Сохранение файла на диск
+        # Сохранение файла на диск
         os.makedirs("results", exist_ok=True)  # Создаём папку, если её нет
         file_path = f"results/{task_id}.png"
         with open(file_path, "wb") as f:
