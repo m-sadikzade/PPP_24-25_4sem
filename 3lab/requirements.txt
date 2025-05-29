@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+celery
+redis
+pydantic
+python-jose[cryptography]
+python-multipart
+websockets
+aiofiles
+requests
