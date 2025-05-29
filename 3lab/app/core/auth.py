@@ -1,3 +1,4 @@
+# app/core/auth.py
 from fastapi import HTTPException, Request, status, Security
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from jose import jwt, JWTError

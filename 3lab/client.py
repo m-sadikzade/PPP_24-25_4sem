@@ -1,3 +1,4 @@
+# client.py
 """
 Консольный клиент:
   listen                   — подписаться на WebSocket
@@ -25,6 +26,10 @@ def upload_image(path: str, algo: str):
         print("POST /binarize →", resp.json())
 
 def main():
+    print("            ---------------------------------            ")
+    print("            Команды: listen | send <file> <algo> | exit")
+    print("Доступные алгоритмы: otsu, adaptive, custom")
+    print("            ---------------------------------            ")
     while True:
         cmd = input(">>> ").strip()
         if cmd == "listen":

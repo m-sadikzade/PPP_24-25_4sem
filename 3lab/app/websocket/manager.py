@@ -1,3 +1,4 @@
+# app/websocket/manager.py
 from fastapi import WebSocket
 from typing import Dict
 

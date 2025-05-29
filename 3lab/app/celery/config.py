@@ -1,3 +1,4 @@
+# app/celery/config.py
 from celery import Celery
 
 celery_app = Celery(

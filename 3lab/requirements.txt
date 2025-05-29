@@ -1,5 +1,5 @@
 fastapi
-uvicorn
+uvicorn[standard] # [standard] для поддержки websockets и др.
 celery
 redis
 pydantic
@@ -8,3 +8,7 @@ python-multipart
 websockets
 aiofiles
 requests
+python-dotenv
+opencv-python
+numpy
+# pillow>=9.0.0 # Если планируется использовать Pillow для других операций
